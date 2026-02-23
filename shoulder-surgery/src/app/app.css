@@ -1476,4 +1476,8 @@
     .chat-message-card{
         right: 70px;
     }
+
+    .conditions-items{
+        font-size: 14px;
+    }
 }
