@@ -10,14 +10,40 @@
 }
 
 .banner-main-heading {
-    color: #292929;
-    font-family: Kodchasan;
-    font-size: 46px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 60px;
-    width: 718px;
+  color: #292929;
+  font-family: Kodchasan;
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 60px;
+  width: 718px;
 }
+
+.highlight {
+  position: relative;
+  z-index: 1;
+}
+
+.highlight::before {
+  content: "";
+  position: absolute;
+  left: -40px;
+  bottom: 0px;
+  top: 5px;
+
+  width: calc(100% + 90px);
+  height: 70px;
+
+  background: url('/imgs/color-img.png') no-repeat center;
+  background-size: cover;
+
+  border-radius: 12px;
+
+  /* SHADOW GLOW */
+  /* box-shadow: 0 10px 25px rgba(248, 229, 180, 0.6); */
+
+  z-index: -1;
+}
+
 
 .banner-content {
     margin-top: 70px;
@@ -76,7 +102,7 @@
 
 
 .treatment-content {
-    width: 100%;
+    /* width: 100%; */
 }
 
 
@@ -370,6 +396,16 @@
     font-weight: 400;
     line-height: 38px;
     margin-left: 20px;
+}
+
+.list span {
+    color: #000;
+    font-variant-numeric: lining-nums tabular-nums;
+    font-family: Sora;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 38px;
 }
 
 .doctor-content {
@@ -1454,6 +1490,10 @@
         text-align: center;
     }
 
+    .highlight::before{
+        display: none;
+    }
+
     .faq-cards {
         padding: 0;
     }
@@ -1473,11 +1513,11 @@
         max-width: 100%;
     }
 
-    .chat-message-card{
+    .chat-message-card {
         right: 70px;
     }
 
-    .conditions-items{
+    .conditions-items {
         font-size: 14px;
     }
 }

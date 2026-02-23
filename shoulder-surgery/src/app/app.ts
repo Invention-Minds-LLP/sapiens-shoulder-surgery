@@ -110,7 +110,7 @@ export class App {
 
   treatments = {
     image: "/imgs/treatement-img.png",
-    title: "Common Hand to Shoulder Conditions",
+    title: "Benefits of Hand to Shoulder Treatment",
     list: [
       "Long-term pain relief",
       "Improved arm and shoulder mobility",
@@ -188,6 +188,8 @@ export class App {
     setTimeout(() => {
       this.showMessageCard = false;
     }, 5000);
+
+     localStorage.setItem('popupClosed', 'true');
   }
   @HostListener('window:scroll', [])
   onWindowScroll() {
