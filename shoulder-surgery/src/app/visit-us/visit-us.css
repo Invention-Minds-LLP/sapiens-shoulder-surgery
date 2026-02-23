@@ -1,0 +1,290 @@
+.clinic-wrapper h3 {
+    color: #7F0100;
+    font-family: Kodchasan, sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* Wrapper */
+.clinic-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin-top: 20px;
+    font-family: Roboto, sans-serif;
+    ;
+}
+
+/* Card */
+.clinic-card {
+    width: 95%;
+    max-width: 390px;
+    background-color: #fff8f8;
+    border: 1px solid #000;
+    border-radius: 12px;
+    padding: 16px;
+    text-align: center;
+}
+
+/* Title */
+.clinic-title {
+    font-size: 18px;
+    font-weight: 700;
+    background: linear-gradient(90deg, #ff7a18, #ff9f1c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 6px;
+}
+
+/* Logo title */
+.logo-text {
+    font-size: 24px;
+    font-family: 'Nada Qonita', cursive;
+}
+
+/* Time text */
+.clinic-time {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+/* Contact */
+.clinic-contact {
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 6px;
+}
+
+.clinic-contact a {
+    color: #c2410c;
+    text-decoration: none;
+}
+
+.faqs-section {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    gap: 100px;
+    align-items: center;
+    background-color: #FEFFEE;
+    flex-wrap: wrap;
+    height: auto;
+    padding: 20px;
+}
+
+.faqs-right-side {
+    display: flex;
+    justify-content: center;
+
+}
+
+.faqs-right-side form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    width: 100%;
+    max-width: 450px;
+    border-radius: 20px;
+    background: linear-gradient(270deg, #E7554C 0.84%, #7F0100 100%);
+    padding: 6% 10%;
+}
+
+.form-text {
+    color: #FFF;
+    text-align: center;
+    font-family: Kodchasan, sans-serif;
+    font-size: 24px;
+    text-transform: capitalize;
+}
+
+.faqs-right-side h4 {
+    color: #FFF;
+    font-family: Rubik, sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.faqs-right-side input {
+    width: 100%;
+    height: 48px;
+    padding: 0 10px;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.50);
+    border: none;
+}
+
+.callback-field {
+    width: 100%;
+}
+
+.faqs-right-side input::placeholder {
+    color: #060606;
+    font-family: Sora, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    text-transform: capitalize;
+}
+
+.otp-2 {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.otp-2 button {
+    color: #060606;
+    font-family: Sora, sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: capitalize;
+    border-radius: 6px;
+    background: #FFD466;
+    padding: 9px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.book-apt-2 {
+    width: 100%;
+    max-width: 365px;
+    height: 48px;
+    padding: 10px 20px;
+    border-radius: 6px;
+    background: #FFF;
+    color: #060606;
+    font-family: Sora, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    text-transform: capitalize;
+    border: none;
+    cursor: pointer;
+}
+
+.faqs {
+    display: flex;
+    justify-content: center;
+    padding: 2% 5%;
+    background-color: #FEFFEE;
+}
+
+/* Footer */
+.footer {
+    padding-bottom: 1%;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 5%;
+    flex-wrap: wrap;
+}
+
+.sec {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.sec-1 {
+    align-items: flex-start;
+    width: 25%;
+}
+
+.sec-2,
+.sec-3 {
+    align-items: center;
+    width: 40%;
+}
+
+.sec-1 img {
+    width: 100%;
+    max-width: 211px;
+    height: auto;
+}
+
+.footer-doc-name {
+    color: #000;
+    font-family: Poppins, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 20px;
+    background: #B2EAFF;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+.doc-qualification {
+    color: #000;
+    text-align: center;
+    font-family: Poppins, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.footer-btns {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+}
+
+.book-apt-3 {
+    width: 200px;
+    height: 40px;
+    padding: 5px 26px;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #EF7F1A 0%, #FFD466 100%);
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.error-message {
+    color: #991b1b;
+    /* dark red text */
+    font-size: 14px;
+    font-weight: 500;
+    font-family: poppins;
+}
+
+.error-message-1 {
+    color: yellow;
+    /* dark red text */
+    font-size: 14px;
+    font-weight: 500;
+    font-family: poppins;
+}
+
+@media (min-width: 768px) {
+    .clinic-card {
+        max-width: 590px;
+    }
+
+    .clinic-title {
+        font-size: 24px;
+    }
+
+    .logo-text {
+        font-size: 36px;
+    }
+
+    .clinic-time {
+        font-size: 20px;
+    }
+
+    .clinic-contact {
+        font-size: 16px;
+    }
+}

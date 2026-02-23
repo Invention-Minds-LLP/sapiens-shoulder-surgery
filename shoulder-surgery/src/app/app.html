@@ -1,0 +1,326 @@
+<app-nav-bar></app-nav-bar>
+<div class="sholder-surgery-component">
+  <div class="banner-part">
+    <div class="banner-content">
+      <div class="banner-main-heading">Hand to Shoulder Specialist in <span>Malleshwaram, Bangalore</span></div>
+      <div class="banner-para">Get advanced hand to shoulder treatment in Bangalore. from an experienced orthopedic hand
+        surgeon. Dr. Darshan Kumar A. Jain provides expert care for hand pain, wrist pain, elbow pain and shoulder pain
+        using modern, evidence-based treatment methods.</div>
+      <!-- <div class="banner-line"></div> -->
+      <div class="contact-from">
+        <app-form></app-form>
+      </div>
+      <img src="/imgs/banner-line.png" alt="">
+
+    </div>
+
+    <div class="banner-video">
+      <video autoplay muted loop playsinline>
+        <source src="imgs/banner-video.mp4">
+      </video>
+    </div>
+
+    <div class="form-part">
+    </div>
+  </div>
+
+  <div class="treatment-part">
+    <div class="">
+      <img src="/imgs/treatment-img.png" alt="">
+    </div>
+
+    <div class="treatment-content">
+      <div class="treatment-heading">Hand to Shoulder Treatment in Bangalore</div>
+      <div class="treatment-para">
+        <div>
+          <span>Hand to shoulder treatment</span> focuses on diagnosing and treating problems affecting the
+          <span> hand, wrist, elbow, and shoulder joints.</span> These conditions often cause <span>pain, stiffness,
+            weakness, numbness, or
+            limited arm movement.</span>
+        </div>
+        <div>
+          Treatment options include <span>non-surgical treatment</span>, medication, physiotherapy, <br> injections and
+          when needed, <span>hand to
+            shoulder surgery.</span> Surgery is recommended only after careful evaluation and when conservative
+          treatment does not
+          give relief.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="symptoms-part" #triggerSection>
+    <div class="symptoms-video">
+      <video autoplay muted loop playsinline>
+        <source src="imgs/symptoms-video.mp4">
+      </video>
+    </div>
+
+    <div class="symptoms-content">
+      <div class="symptoms-heading">Symptoms - When to Consult a Hand to Shoulder Specialist?</div>
+      <div class="symptoms-para">Consult a hand to shoulder specialist in Bangalore if you have:</div>
+      <div class="symptoms-list-container">
+        <div *ngFor="let item of specialistData" class="symptoms-list">
+          <div class="icon-box" [style.background]="item.bg">
+            <img src={{item.img}} alt="">
+          </div>
+
+          <div class="symptoms-item">
+            {{item.text}}
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="symptoms-item">Early diagnosis helps prevent long-term joint damage and improves recovery.</div>
+    </div>
+
+  </div>
+
+  <div class="need-part">
+    <div class="heading">Who Needs Hand to Shoulder Treatment?</div>
+    <div class="need-para">Hand to shoulder care is recommended for patients who:</div>
+
+    <div class="cards">
+      <div class="card-1 card">
+        <img src="/imgs/need-card-1.svg" alt="">
+        <div class="card-heading">Have <span>chronic arm pain</span> not improving with medication</div>
+      </div>
+
+      <div class="card-2 card">
+        <img src="/imgs/need-card-2.svg" alt="">
+        <div class="card-heading">Experience <span>restricted shoulder or hand movement</span></div>
+        <span class="card-span">Most Common</span>
+      </div>
+
+      <div class="card-3 card">
+        <img src="/imgs/need-card-3.svg" alt="">
+        <div class="card-heading">Have <span>nerve compression</span>, tendon injury or joint damage</div>
+      </div>
+
+      <div class="card-4 card">
+        <img src="/imgs/need-card-4.svg" alt="">
+        <div class="card-heading">Show structural problems on <span>X-ray, ultrasound or MRI</span></div>
+      </div>
+
+      <div class="card-5 card">
+        <img src="/imgs/need-card-5.svg" alt="">
+        <div class="card-heading">Need full arm function for work or daily life</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="doctor-part">
+    <div class="doctor-content">
+      <div class="doctor-heading">Dr. Darshan Kumar A. Jain</div>
+      <div class="doctor-sub-heading">Orthopedic Hand & Upper Limb Specialist</div>
+      <div class="doctor-para">Dr. Darshan Kumar A. Jain is a highly experienced orthopedic surgeon in Malleshwaram,
+        Bangalore, specializing in hand surgery, wrist surgery, elbow surgery and shoulder surgery.
+        He is known for ethical treatment, accurate diagnosis, and patient-focused care, ensuring surgery is advised
+        only when necessary.
+      </div>
+      <div class="experiene-heading">Clinical Experience</div>
+      <ul class="list">
+        <li>Specialist in hand, wrist, elbow and shoulder treatment</li>
+        <li>Trusted orthopedic doctor in Bangalore</li>
+      </ul>
+
+      <div class="doctor-btn" (click)="openPopup()"><button>Book Appointment</button></div>
+    </div>
+
+    <div class="doctor-image">
+      <img src="/imgs/doctor-img.png" alt="" class="doc-img">
+      <img src="/imgs/doctor-img-resp.png" alt="" class="doc-img-resp">
+
+
+      <div class="experience-box">
+        <div class="experience-years">15+</div>
+        <div class="experience-years-text">Years of experience in orthopedic and upper-limb care</div>
+      </div>
+
+      <div class="happy-patients">
+        <div class="happy-patients-count">5000+</div>
+        <div class="happy-patients-text">Patients treated across hand, wrist, and elbow conditions</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="conditions-part">
+    <div class="condition-content">
+      <div class="">
+        <div class="heading">Hand to Shoulder Conditions & Surgeries Treated</div>
+        <div class="condition-cards">
+          <div class="condition-card" *ngFor="let item of conditionData">
+            <img [src]="item.img" alt="">
+            <div class="condition-cord-heading">{{item.heading}}</div>
+            <div class="condition-cord-para">{{item.para}}</div>
+          </div>
+        </div>
+
+      </div>
+      <div class="condition-video">
+        <video autoplay muted loop playsinline>
+          <source src="/imgs/condition-video.mp4">
+        </video>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="procedure-part">
+    <div class="heading">Hand to Shoulder Treatment Procedure</div>
+    <div class="procedure-para">How the Treatment Is Done?</div>
+    <div class="procedure-steps">
+      <div class="line"></div>
+      <div class="line2"></div>
+      <div class="steps-wrapper">
+        <div class="step-card" *ngFor="let item of steps">
+          <div class="step-number">
+            {{item.step}}
+          </div>
+
+          <div class="step-title">
+            {{item.title}}
+          </div>
+
+          <div class="step-desc">
+            {{item.desc}}
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="flex-container">
+    <div class="conditions-card">
+
+      <div class="img-box">
+        <img [src]="handConditions.image" alt="">
+      </div>
+
+      <h2 class="title">
+        {{handConditions.title}}
+      </h2>
+
+      <div *ngFor="let item of handConditions.list" class="condition-item">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path d="M18 4H6.5C5 4 2 5 2 8C2 11 5 12 6.5 12H17.5C19 12 22 13 22 16C22 19 19 20 17.5 20H6" stroke="#2B7FFF"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path
+            d="M20 6C20.5304 6 21.0391 5.78929 21.4142 5.41421C21.7893 5.03914 22 4.53043 22 4C22 3.46957 21.7893 2.96086 21.4142 2.58579C21.0391 2.21071 20.5304 2 20 2C19.4696 2 18.9609 2.21071 18.5858 2.58579C18.2107 2.96086 18 3.46957 18 4C18 4.53043 18.2107 5.03914 18.5858 5.41421C18.9609 5.78929 19.4696 6 20 6ZM4 22C4.53043 22 5.03914 21.7893 5.41421 21.4142C5.78929 21.0391 6 20.5304 6 20C6 19.4696 5.78929 18.9609 5.41421 18.5858C5.03914 18.2107 4.53043 18 4 18C3.46957 18 2.96086 18.2107 2.58579 18.5858C2.21071 18.9609 2 19.4696 2 20C2 20.5304 2.21071 21.0391 2.58579 21.4142C2.96086 21.7893 3.46957 22 4 22Z"
+            stroke="#2B7FFF" stroke-width="2" stroke-linejoin="round" />
+        </svg>
+        <span class="conditions-items">{{item}}</span>
+      </div>
+
+    </div>
+
+    <div class="conditions-card">
+
+      <div class="img-box">
+        <img [src]="treatments.image" alt="">
+      </div>
+
+      <h2 class="title">
+        {{treatments.title}}
+      </h2>
+
+      <div *ngFor="let item of treatments.list" class="condition-item">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path
+            d="M16.9712 6.25101C16.7416 6.12339 16.4891 6.04226 16.2281 6.01224C15.9671 5.98223 15.7028 6.00392 15.4502 6.07607C15.1976 6.14822 14.9618 6.26943 14.756 6.43277C14.5503 6.5961 14.3787 6.79837 14.2512 7.02801L10.5382 13.71L8.41319 11.585C8.22869 11.394 8.008 11.2416 7.76399 11.1368C7.51999 11.032 7.25755 10.9768 6.99199 10.9745C6.72643 10.9722 6.46307 11.0228 6.21728 11.1234C5.97148 11.2239 5.74818 11.3724 5.5604 11.5602C5.37261 11.748 5.2241 11.9713 5.12354 12.2171C5.02298 12.4629 4.97238 12.7263 4.97468 12.9918C4.97699 13.2574 5.03217 13.5198 5.13698 13.7638C5.2418 14.0078 5.39417 14.2285 5.58519 14.413L9.58519 18.413C9.96319 18.792 10.4732 19 10.9992 19L11.2762 18.98C11.5827 18.9371 11.8751 18.8237 12.1304 18.6486C12.3857 18.4735 12.5968 18.2416 12.7472 17.971L17.7472 8.97101C17.8748 8.74146 17.956 8.48901 17.9861 8.22809C18.0162 7.96716 17.9946 7.70286 17.9225 7.45028C17.8505 7.19771 17.7294 6.9618 17.5661 6.75602C17.4029 6.55025 17.2007 6.37865 16.9712 6.25101Z"
+            fill="#009689" />
+        </svg>
+        <span class="conditions-items">{{item}}</span>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="why-choose-part">
+    <div class="why-choose-right">
+      <div class="why-choose-heading">Why Choose Sapiens Clinic, Malleshwaram?</div>
+      <img src="/imgs/why-choose-img.png" alt="">
+    </div>
+
+    <div class="why-choose-left">
+      <div class="flex">
+        <div class="num">01</div>
+        <div class="para">Ethical and transparent orthopedic care</div>
+      </div>
+      <div class="flex">
+        <div class="num">02</div>
+        <div class="para">Experienced hand to shoulder surgeon in Bangalore</div>
+      </div>
+      <div class="flex">
+        <div class="num">03</div>
+        <div class="para">Complete diagnosis and treatment under one roof</div>
+      </div>
+      <div class="flex">
+        <div class="num">04</div>
+        <div class="para">Continuous care from consultation to recovery</div>
+      </div>
+    </div>
+  </div>
+
+  <app-visit-us></app-visit-us>
+
+  <div class="faq-wrapper">
+    <div class="faq-title">FAQs - Hand to Shoulder Treatment</div>
+    <div class="faq-cards">
+      <div class="faq-card" *ngFor="let item of faqs; let i=index" [class.active]="activeIndex === i">
+
+        <div class="faq-header" (click)="toggleFAQ(i)">
+
+          <div class="faq-left">
+            <img [src]="item.img" alt="" class="faq-icon">
+            <span class="faq-ques">{{item.question}}</span>
+          </div>
+
+          <div class="faq-btn">
+            {{activeIndex === i ? '-' : '+'}}
+          </div>
+
+        </div>
+
+        <div class="faq-body" [class.active]="activeIndex === i">
+          {{item.answer}}
+        </div>
+
+      </div>
+    </div>
+
+    <div class="floating-contact" (click)="openPopup()" *ngIf="showFloatingIcon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <g fill="none" stroke="currentColor" stroke-width="1.5">
+          <path
+            d="M4.5 10c0-3.771 0-5.657 1.172-6.828S8.729 2 12.5 2H14c3.771 0 5.657 0 6.828 1.172S22 6.229 22 10v4c0 3.771 0 5.657-1.172 6.828S17.771 22 14 22h-1.5c-3.771 0-5.657 0-6.828-1.172S4.5 17.771 4.5 14z" />
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M4.5 6H2m2.5 6H2m2.5 6H2m13.275-9.507a2 2 0 1 1-4 0a2 2 0 0 1 4 0M9.32 15.716c1.058-1.63 2.739-2.24 3.955-2.239s2.847.61 3.906 2.24a.33.33 0 0 1 .025.344c-.247.439-1.016 1.31-1.57 1.369c-.638.067-2.307.077-2.36.077s-1.773-.01-2.41-.077c-.556-.06-1.324-.93-1.572-1.37c-.061-.109-.043-.238.026-.344" />
+        </g>
+      </svg>
+    </div>
+
+    <div class="popup-overlay" *ngIf="isPopupOpen">
+      <div class="popup-container">
+        <div class="popup-header">
+          <span class="close-btn" (click)="closePopup()">✕</span>
+        </div>
+        <app-form></app-form>
+
+      </div>
+    </div>
+
+    <div class="chat-message-card" *ngIf="showMessageCard" [class.fade-out]="hideMessageAnimation">
+
+      <!-- <div class="msg-title">Namaste! 🙏</div> -->
+      <div class="msg-text">Book An Appointment</div>
+
+    </div>
+  </div>
+
+
+  <app-footer (bookClick)="openPopup()"></app-footer>
+</div>

@@ -1,0 +1,93 @@
+.contact-card {
+    width: 363px;
+    height: 289px;
+    border-radius: 16px;
+    border: 0.734px solid #E3EAF1;
+    background: rgba(255, 255, 255, 0.60);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.10), 0 2px 4px -2px rgba(0, 0, 0, 0.10);
+    padding: 30px;
+}
+
+.banner-cta {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.title {
+    margin-bottom: 12px;
+    color: #000;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+    /* 140% */
+    text-transform: capitalize;
+}
+
+input {
+    display: flex;
+    width: 315px;
+    padding: 14px 16px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    border: 2px solid #9E9CAD;
+}
+
+input::placeholder {
+    color: #525050;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+
+
+.phone-row {
+    display: flex;
+    gap: 6px;
+}
+
+button {
+    display: flex;
+    width: 315px;
+    padding: 14px 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 6px;
+    background: #2070B3;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #000;
+    color: #fff;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+@media(max-width:767px) {
+    .contact-card {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+    }
+}
