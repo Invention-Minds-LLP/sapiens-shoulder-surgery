@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'Nada Qonita';
+    src: url('/Nada-Qonita.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
 .clinic-wrapper h3 {
     color: #7F0100;
     font-family: Kodchasan, sans-serif;
@@ -160,7 +168,7 @@
     font-family: Sora, sans-serif;
     font-size: 16px;
     font-weight: 300;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     border: none;
     cursor: pointer;
 }
@@ -286,5 +294,11 @@
 
     .clinic-contact {
         font-size: 16px;
+    }
+}
+
+@media(max-width:767px){
+    .faqs-right-side h4{
+        text-align: center;
     }
 }

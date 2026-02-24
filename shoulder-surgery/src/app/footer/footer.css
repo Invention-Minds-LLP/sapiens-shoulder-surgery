@@ -202,7 +202,37 @@ a{
     color: #808080;
 }
 
+@media(max-width:1439px) {
+    .part-1 {
+        flex-direction: row;
+        gap: 50px;
+    }
+
+    .location{
+        font-size: 16px;
+    }
+}
+
+@media(max-width:1023px) {
+    .part-1 img {
+        width: 161px;
+        height: 87px;
+    }
+
+    .part-1 {
+        gap: 40px;
+    }
+}
+
+
 @media(max-width:767px){
+
+    .part-1{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
 
     .footer-part{
         justify-content: center;

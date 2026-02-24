@@ -618,19 +618,27 @@
 }
 
 .step-card {
-    width: 250px;
-    height: 240px;
-    border-radius: 16px;
-    border: 1.6px solid #CBFBF1;
-    background: #FFF;
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.10), 0 4px 6px -4px rgba(0, 0, 0, 0.10);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    /* gap: 20px; */
-    justify-content: space-evenly;
-    gap: 10px;
+  width: 250px;
+  height: 240px;
+  border-radius: 16px;
+  border: 1.6px solid #CBFBF1;
+  background: #FFF;
+  box-shadow: 0 10px 15px -3px rgba(0,0,0,0.10),
+              0 4px 6px -4px rgba(0,0,0,0.10);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  justify-content: space-evenly;
+  gap: 10px;
+
+  transition: all 0.35s ease;
+}
+
+.step-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 30px rgba(0,0,0,0.15);
 }
 
 .steps-wrapper {
@@ -1413,6 +1421,11 @@
         gap: 20px;
     }
 
+    .why-choose-right img{
+        width: 100%;
+        height: auto;
+    }
+
     .treatment-heading,
     .symptoms-heading {
         font-size: 20px;
@@ -1431,6 +1444,11 @@
     .symptoms-item {
         text-align: center;
     }
+    .icon-box{
+        width: fit-content;
+        height: auto;
+        padding: 10px;
+    }
 
     .experience-box,
     .happy-patients {
@@ -1441,6 +1459,10 @@
         width: 80%;
         height: auto;
         gap: 10px;
+    }
+
+    .conditions-card{
+        padding: 20px;
     }
 
     .why-choose-left {
